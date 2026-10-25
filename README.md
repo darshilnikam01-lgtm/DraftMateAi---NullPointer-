@@ -4,7 +4,7 @@
 🔗 **Live demo:** https://draftmate-ai-l0el.onrender.com
 
 - Username: `draftmate`
-- Password: ask the team
+- Password: not for now
 
 > Free hosting: the first load after idle time can take ~50 seconds.
 > 
