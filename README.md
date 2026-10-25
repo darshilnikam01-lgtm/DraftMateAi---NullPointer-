@@ -1,5 +1,13 @@
-# DraftMate AI · Legal Drafting Studio
 
+# DraftMate AI: Legal Drafting Studio
+
+🔗 **Live demo:** https://draftmate-ai-l0el.onrender.com
+
+- Username: `draftmate`
+- Password: ask the team
+
+> Free hosting: the first load after idle time can take ~50 seconds.
+> 
 Chat-first legal drafting. The user says what they need (typed or spoken); the backend picks a skill from `backend/skills/`,
 the screen opens a task workspace, the user customises it by chat, voice, fields or quick actions, then finishes and returns to chat.
 
