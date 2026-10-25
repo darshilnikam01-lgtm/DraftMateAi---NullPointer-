@@ -1,0 +1,26 @@
+# Render.com blueprint: "New > Blueprint" and point it at your repo.
+services:
+  - type: web
+    name: draftmate-ai
+    runtime: docker
+    plan: starter            # free plan sleeps and drops in-memory uploads; starter keeps it awake
+    healthCheckPath: /api/health
+    disk:
+      name: draftmate-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false          # you type the value in the Render dashboard
+      - key: DB_PATH
+        value: /data/draftmate.db
+      - key: GEMINI_MODEL
+        value: gemini-3.8-flash
+      - key: GEMINI_FAST_MODEL
+        value: gemini-3.5-flash-lite
+      - key: INDIANKANOON_TOKEN
+        sync: false
+      - key: APP_USER
+        value: draftmate
+      - key: APP_PASSWORD
+        sync: false          # choose a strong password; protects your Gemini quota
